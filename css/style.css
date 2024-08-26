@@ -1,0 +1,8 @@
+/* Global */
+:root {
+  background-color: aliceblue;
+}
+
+* {
+  box-sizing: border-box;
+}
