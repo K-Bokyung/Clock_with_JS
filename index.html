@@ -17,14 +17,14 @@
   </head>
   <body>
     <!-- header -->
-    <header><span>배터리 : </span><span>100%</span></header>
+    <header><span>배터리 : 100%</span></header>
     <!-- naver -->
     <nav><span>시간</span><span>알림 현황</span></nav>
     <main>
-      <!-- 시간 -->
-      <section>2024.12.01 11:32:42</section>
-      <!-- 알림 현황 -->
-      <section>
+      <section class="informations">
+        <!-- 시간 -->
+        <span>2024.12.01 11:32:42</span>
+        <!-- 알림 현황 -->
         <ul>
           <li>알림 6시 30분</li>
           <li>알림 8시</li>
@@ -32,12 +32,12 @@
         </ul>
       </section>
       <!-- 알람 -->
-      <section>
+      <section class="buttons">
         <span>알람</span>
-        <button>시</button>
+        <button class="buttons__hour">시</button>
         <button>분</button>
         <button>초</button>
-        <button>추가</button>
+        <button class="buttons__add">추가</button>
       </section>
     </main>
   </body>

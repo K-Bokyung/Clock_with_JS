@@ -6,3 +6,65 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  width: 20rem;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header span {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* section */
+.informations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.informations span {
+  border: 1px solid black;
+}
+
+.informations ul {
+  list-style: none;
+  border: 1px solid black;
+}
+
+/* section */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttons span {
+  margin-right: 1rem;
+}
+
+.buttons__hour {
+  margin-right: 1rem;
+}
+
+.buttons__add {
+  margin-left: 1rem;
+}
