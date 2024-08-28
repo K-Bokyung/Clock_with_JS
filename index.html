@@ -16,29 +16,33 @@
     <title>시계</title>
   </head>
   <body>
-    <!-- header -->
-    <header><span>배터리 : 100%</span></header>
-    <!-- naver -->
-    <nav><span>시간</span><span>알림 현황</span></nav>
-    <main>
-      <section class="informations">
-        <!-- 시간 -->
-        <span>2024.12.01 11:32:42</span>
-        <!-- 알림 현황 -->
-        <ul>
-          <li>알림 6시 30분</li>
-          <li>알림 8시</li>
-          <li>알림 10시 30분</li>
-        </ul>
-      </section>
+      <div class="battery">
+        <span class="bettery__blank"></span>
+        <input type="text" id="bettery__percent" placeholder="배터리 : " disabled>
+      </div>
+      <div class="informations">
+        <div class="informations__time">
+          <!-- 시간 -->
+          <span>시간</span>
+          <input type="text" id="time_now" disabled>
+        </div>
+        <!-- 알람 현황 -->
+        <div class="informations__alarm">
+          <span>알람 현황</span>
+          <input type="text" id="alarm_list" disabled>
+        </div>
+      </div>
       <!-- 알람 -->
-      <section class="buttons">
-        <span>알람</span>
-        <button class="buttons__hour">시</button>
-        <button>분</button>
-        <button>초</button>
-        <button class="buttons__add">추가</button>
-      </section>
+      <div class="buttons">
+        <div class="buttons__alarm">
+          <span>알람</span>
+          <button class="buttons__hour">시</button>
+          <button class="buttons__minute">분</button>
+          <button class="buttons__second">초</button>
+          <button class="buttons__add">추가</button>
+        </div>
+        <span class="buttons__blank"></span>
+      </div>
     </main>
   </body>
 </html>

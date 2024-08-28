@@ -8,63 +8,104 @@
 }
 
 body {
-  margin: 0;
-  width: 20rem;
+  margin: 1rem 4rem;
+  width: 30rem;
 }
 
-/* header */
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+/* 배터리 */
+.battery {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 68% 30%;
+  gap: 2%;
 }
 
-header span {
+.bettery__blank {
+  border-color: transparent;
+  height: 2rem;
+}
+
+#bettery__percent {
   text-align: center;
   border: 1px solid black;
 }
 
-/* navbar */
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* section */
+/* 시간과 알람 현황 */
 .informations {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  align-content: center;
+  grid-template-columns: 68% 30%;
+  margin: 0.5rem 0;
+  gap: 2%;
 }
 
 .informations span {
-  border: 1px solid black;
+  padding: 0.5rem;
 }
 
-.informations ul {
+/* 시간 */
+.informations__time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#time_now {
+  width: 100%;
+  height: 100%;
+}
+
+/* 알람 */
+.informations__alarm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#alarm_list {
   list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   border: 1px solid black;
 }
 
-/* section */
+/* 알람 버튼 */
 .buttons {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 68% 30%;
+  margin: 1rem 0;
+  gap: 2%;
+}
+
+.buttons__alarm {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
-.buttons span {
+.buttons__alarm span {
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .buttons__hour {
   margin-right: 1rem;
+  width: 15%;
+}
+
+.buttons__minute {
+  width: 15%;
+}
+
+.buttons__second {
+  width: 15%;
 }
 
 .buttons__add {
   margin-left: 1rem;
+  width: 15%;
 }
