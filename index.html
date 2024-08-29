@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./src/main.js"></script>
-    <!-- Fontawsome -->
+    <script type="text/javascript" src="./src/main.js"></script>
+<!-- Fontawsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,21 +15,24 @@
     />
     <title>시계</title>
   </head>
-  <body>
+  <body onload="startTime()">
+      <!-- 배터리 -->
       <div class="battery">
         <span class="bettery__blank"></span>
         <input type="text" id="bettery__percent" placeholder="배터리 : " disabled>
       </div>
+      <!-- 정보들 -->
       <div class="informations">
+        <!-- 시간 -->
         <div class="informations__time">
-          <!-- 시간 -->
           <span>시간</span>
-          <input type="text" id="time_now" disabled>
+          <span id="today_date"></span>
+          <span id="today_time"></span>
         </div>
         <!-- 알람 현황 -->
         <div class="informations__alarm">
           <span>알람 현황</span>
-          <input type="text" id="alarm_list" disabled>
+          <input type="text" id="alarm_list" value="" disabled>
         </div>
       </div>
       <!-- 알람 -->
