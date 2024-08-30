@@ -22,9 +22,11 @@ function startTime() {
   betteryCount();
 
   setTimeout(startTime, 1000);
+
+  alarm();
 }
 
-// 10보다 작은 숫자 앞에 '0'을 붙임
+// 10보다 작은 숫자 앞에 '0' 붙임
 function checkTime(i) {
   if (i < 10) {
     i = '0' + i;
@@ -48,4 +50,29 @@ function betteryCount() {
 
 function stopCount() {
   clearTimeout(bettery_out);
+}
+
+// 알람 현황
+function alarm() {
+  const alarm_list = [0, 0, 0];
+  let txt;
+
+  let buttons = document.querySelectorAll('button');
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      if (button.value === 'hour') {
+        alarm_list[0] += 1;
+        console.log('clicked');
+      } else if (button.value === 'minute') {
+        alarm_list[1] += 1;
+        console.log('clicked');
+      } else if (button.value === 'second') {
+        alarm_list[2] += 1;
+        console.log('clicked');
+      }
+      txt = alarm_list.join('');
+      // console.log(txt);
+      document.getElementById('span').innerHTML = txt;
+    });
+  });
 }

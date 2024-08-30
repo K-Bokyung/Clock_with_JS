@@ -20,7 +20,6 @@
       <div class="battery">
         <span class="bettery__blank"></span>
         <span id="bettery__percent" onload="betteryCount()"></span>
-        <!-- <input type="text" id="bettery__percent" disabled> -->
       </div>
       <!-- 정보들 -->
       <div class="informations">
@@ -33,17 +32,17 @@
         <!-- 알람 현황 -->
         <div class="informations__alarm">
           <span>알람 현황</span>
-          <input type="text" id="alarm_list" value="" disabled>
+          <span id="span"></span>
         </div>
       </div>
       <!-- 알람 -->
       <div class="buttons">
         <div class="buttons__alarm">
           <span>알람</span>
-          <button class="buttons__hour">시</button>
-          <button class="buttons__minute">분</button>
-          <button class="buttons__second">초</button>
-          <button class="buttons__add">추가</button>
+          <button class="buttons__hour" value="hour">시</button>
+          <button class="buttons__minute" value="minute">분</button>
+          <button class="buttons__second" value="second">초</button>
+          <button class="buttons__add" value="add">추가</button>
         </div>
         <span class="buttons__blank"></span>
       </div>
