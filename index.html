@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <script type="text/javascript" src="./src/main.js"></script>
-<!-- Fontawsome -->
+  <!-- Fontawsome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,20 +19,22 @@
       <!-- 배터리 -->
       <div class="battery">
         <span class="bettery__blank"></span>
-        <span id="bettery__percent" onload="betteryCount()"></span>
+        <span id="bettery__percent"></span>
       </div>
       <!-- 정보들 -->
       <div class="informations">
         <!-- 시간 -->
         <div class="informations__time">
           <span>시간</span>
-          <span id="today_date"></span>
-          <span id="today_time"></span>
+          <div id="box" class="information__box">
+            <span id="today_date"></span>
+            <span id="today_time"></span>
+          </div>
         </div>
         <!-- 알람 현황 -->
         <div class="informations__alarm">
           <span>알람 현황</span>
-          <span id="span"></span>
+          <span id="alarm_list"></span>
         </div>
       </div>
       <!-- 알람 -->
